@@ -1,3 +1,2 @@
 # LiteLearn
-PRN212 .Net Project
-Simple FlashCard Project
+PRN212 .Net Simple FlashCard Project
