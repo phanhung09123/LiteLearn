@@ -1,0 +1,28 @@
+﻿<Window x:Class="FlashCardApp.Views.ChooseTopicWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choose Topic" Height="422" Width="554"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel Margin="20">
+        <TextBlock Text="Select a Topic to Review:" FontSize="16" Margin="0,0,0,10"/>
+
+        <Grid>
+            <TextBox x:Name="SearchBox" Width="300" Margin="0,0,0,10"
+             TextChanged="SearchBox_TextChanged"/>
+            <TextBlock x:Name="SearchPlaceholder"
+               Text="Search topic..."
+               Foreground="Gray"
+               Margin="5,0,0,10"
+               VerticalAlignment="Center"
+               IsHitTestVisible="False"
+               Visibility="Visible"/>
+        </Grid>
+
+
+        <ListBox x:Name="TopicListBox" DisplayMemberPath="Title" Height="239"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="OK" Width="80" Margin="5" Click="Ok_Click"/>
+            <Button Content="Cancel" Width="80" Margin="5" Click="Cancel_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

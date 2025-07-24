@@ -1,0 +1,27 @@
+﻿<Window x:Class="FlashCardApp.Views.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Register" Height="259" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Username:"/>
+            <TextBox x:Name="UsernameBox" Margin="0,5"/>
+
+            <TextBlock Text="Password:"/>
+            <PasswordBox x:Name="PasswordBox" Margin="0,5"/>
+
+            <TextBlock Text="Re-enter Password:"/>
+            <PasswordBox x:Name="RePasswordBox" Margin="0,5"/>
+
+            <Button Content="Register" Margin="0,10" Click="Register_Click"/>
+            <Button Content="Already joined?, go to Login" Margin="0,10" Click="Login_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
